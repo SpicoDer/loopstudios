@@ -1,62 +1,53 @@
-<section class="footer-section bg-black">
-  <div
-    class="flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between"
-  >
-    <!-- Logo and footer links -->
-    <div class="space-y-8 md:space-y-4">
+<footer class="bg-prim-600">
+  <section class="footer">
+    <div
+      class="flex flex-col items-center justify-center gap-8 p-6 md:flex-row md:justify-between"
+    >
       <!-- Logo -->
-      <img src="./images/logo.svg" alt="" class="w-40" />
-      <!-- Footer links -->
-      <ul
-        class="flex flex-col items-center justify-center gap-4 text-white md:flex-row"
-      >
-        <li class="group space-y-1">
-          <a href="/" class="font-body">About</a>
-          <div
-            class="border opacity-0 group-hover:border-b-white group-hover:opacity-100"
-          ></div>
-        </li>
-        <li class="group space-y-1">
-          <a href="/" class="font-body">Careers</a>
-          <div
-            class="border opacity-0 group-hover:border-b-white group-hover:opacity-100"
-          ></div>
-        </li>
-        <li class="group space-y-1">
-          <a href="/" class="font-body">Events</a>
-          <div
-            class="border opacity-0 group-hover:border-b-white group-hover:opacity-100"
-          ></div>
-        </li>
-        <li class="group space-y-1">
-          <a href="/" class="font-body">Products</a>
-          <div
-            class="border opacity-0 group-hover:border-b-white group-hover:opacity-100"
-          ></div>
-        </li>
-        <li class="group space-y-1">
-          <a href="/" class="font-body">Support</a>
-          <div
-            class="border opacity-0 group-hover:border-b-white group-hover:opacity-100"
-          ></div>
-        </li>
-      </ul>
+      <a href="/" class="outline-none">
+        <svg class="h-20 w-48 cursor-pointer">
+          <use xlink:href="./assets/icons.svg#logo"></use>
+        </svg>
+      </a>
+
+      <!-- Social links and Copyright -->
+      <div class="space-y-4">
+        <!-- Social Links -->
+        <ul class="flex items-center justify-center gap-4">
+          <li>
+            <a href="https://www.facebook.com/rodel.arcoirez">
+              <svg
+                title="instagram icon"
+                class="h-10 w-10 transition hover:scale-90"
+              >
+                <use xlink:href="./assets/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <svg
+                title="instagram icon"
+                class="h-10 w-10 transition hover:scale-90"
+              >
+                <use xlink:href="./assets/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <svg
+                title="instagram icon"
+                class="h-10 w-10 transition hover:scale-90"
+              >
+                <use xlink:href="./assets/icons.svg#tiktok"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- Copyright-->
+        <p class="text-white">© 2023 Spicoder. All Rights Reserved</p>
+      </div>
     </div>
-    <!-- Social links and Copyright -->
-    <div class="space-y-4">
-      <!-- Social Links -->
-      <ul class="flex items-center justify-center gap-4">
-        <li><img src="./images/icon-facebook.svg" alt="" class="w-6" /></li>
-        <li><img src="./images/icon-twitter.svg" alt="" class="w-6" /></li>
-        <li>
-          <img src="./images/icon-instagram.svg" alt="" class="w-6" />
-        </li>
-        <li>
-          <img src="./images/icon-pinterest.svg" alt="" class="w-6" />
-        </li>
-      </ul>
-      <!-- Copyright-->
-      <p class="text-gray-400">© 2023 Loopstudios. All Rights Reserved</p>
-    </div>
-  </div>
-</section>
+  </section>
+</footer>

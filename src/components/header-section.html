@@ -1,0 +1,86 @@
+<header class="relative">
+  <!-- Navigation -->
+  <nav>
+    <section
+      id="nav-section"
+      class="fixed left-1/2 z-30 w-full -translate-x-1/2"
+    >
+      <!-- Navigation container -->
+      <div
+        class="nav mx-auto flex w-full items-center justify-between font-body text-txt-dark"
+      >
+        <!-- Logo-->
+        <a href="/" class="outline-none">
+          <svg class="h-20 w-40 cursor-pointer">
+            <use xlink:href="./assets/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <!-- Links -->
+        <ul class="hidden gap-8 text-xl font-bold text-white lg:flex">
+          <li class="group">
+            <a href="#gallery" class="scroll-smooth">Dogs</a>
+            <div
+              class="border border-prim-400 opacity-0 group-hover:opacity-100"
+            ></div>
+          </li>
+          <li class="group">
+            <a href="">Gallery</a>
+            <div
+              class="border border-prim-400 opacity-0 group-hover:opacity-100"
+            ></div>
+          </li>
+          <li class="group">
+            <a href="">Customers</a>
+            <div
+              class="border border-prim-400 opacity-0 group-hover:opacity-100"
+            ></div>
+          </li>
+        </ul>
+        <!-- Menu button -->
+        <div class="menu-btn lg:hidden">
+          <div class="top bg-txt-dark"></div>
+          <div class="mid bg-txt-dark"></div>
+          <div class="bot bg-txt-dark"></div>
+        </div>
+
+        <!-- Login/Signup button -->
+        <div class="hidden items-center justify-center gap-8 lg:flex">
+          <a
+            id="contact-btn"
+            href="https://www.facebook.com/rodel.arcoirez"
+            class="btn bg-prim-400 text-white hover:bg-opacity-80"
+            >Contact me</a
+          >
+        </div>
+      </div>
+    </section>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero grid h-screen place-items-center">
+      <h1
+        class="p-4 text-center text-5xl uppercase text-white md:text-6xl lg:text-7xl xl:text-8xl"
+      >
+        Find your furry companion
+      </h1>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <div
+    class="menu disable absolute top-0 right-0 z-20 grid h-full w-1/2 place-items-center bg-prim-600 px-4 lg:hidden"
+  >
+    <ul class="space-y-8 text-center text-xl font-bold text-white">
+      <li class="hover:text-shadow">
+        <a href="#gallery">Dogs</a>
+      </li>
+      <li class="hover:text-shadow">
+        <a href="">Gallery</a>
+      </li>
+      <li class="hover:text-shadow">
+        <a href="">Customers</a>
+      </li>
+    </ul>
+  </div>
+</header>
