@@ -1,0 +1,96 @@
+<nav class="max-w-7xl bg-slate-700 px-4 py-8 md:px-12 mb-32 mx-auto">
+  <div class="flex justify-between">
+    <!-- Logo -->
+    <img src="/images/logo.svg" alt="loopstudios logo" />
+
+    <!-- Links -->
+    <ul class="hidden gap-8 font-bold items-center text-white lg:flex">
+      <li class="group">
+        <a href="#about">About</a>
+        <div class="border border-white opacity-0 group-hover:opacity-100">
+        </div>
+      </li>
+      <li class="group">
+        <a href="#careers">Careers</a>
+        <div class="border border-white opacity-0 group-hover:opacity-100">
+        </div>
+      </li>
+
+      <li class="group">
+        <a href="#events">Events</a>
+        <div class="border border-white opacity-0 group-hover:opacity-100">
+        </div>
+      </li>
+      <li class="group">
+        <a href="#products">Products</a>
+        <div class="border border-white opacity-0 group-hover:opacity-100">
+        </div>
+      </li>
+      <li class="group">
+        <a href="#supports">Supports</a>
+        <div class="border border-white opacity-0 group-hover:opacity-100">
+        </div>
+      </li>
+    </ul>
+
+    <!-- Menu -->
+    <div class="menu-btn lg:hidden">
+      <div class="top"></div>
+      <div class="mid"></div>
+      <div class="bot"></div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Menu btn*/
+  .menu-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  .top,
+  .mid,
+  .bot {
+    position: absolute;
+    height: 3px;
+    width: 24px;
+    top: 50%;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all 150ms ease-in;
+  }
+
+  .top {
+    transform: translateY(-8px);
+  }
+
+  .bot {
+    transform: translateY(8px);
+  }
+
+  [data-open] {
+    transform: rotate(90deg);
+    transition: all 150ms ease-in;
+  }
+
+  [data-open] .top {
+    transform: rotate(45deg);
+  }
+
+  [data-open] .bot {
+    transform: rotate(-45deg);
+  }
+
+  [data-open] .mid {
+    display: none;
+  }
+</style>
+
+<script>
+  // State of menu
+  document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector(".menu-btn").toggleAttribute("data-open");
+  });
+</script>
