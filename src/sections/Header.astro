@@ -1,0 +1,24 @@
+---
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<header>
+  <Nav />
+  <Hero />
+</header>
+
+<style>
+  header {
+    background-image: url("../../public/images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 576px) {
+    header {
+      background-image: url("../../public/images/mobile/image-hero.jpg");
+      background-position: center;
+    }
+  }
+</style>
