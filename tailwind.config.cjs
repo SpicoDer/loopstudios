@@ -10,7 +10,7 @@ module.exports = {
     },
     fontFamily: {
       // heading: [],
-      body: ["Inter", "sans-serif"],
+      sans: ["Josefin Sans", "sans-serif"],
     },
     extend: {
       colors: {
