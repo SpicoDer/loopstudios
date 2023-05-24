@@ -1,0 +1,23 @@
+---
+export interface Props {
+  srcDesktop: string;
+  srcMobile: string;
+  title: string;
+}
+
+const { title, srcDesktop, srcMobile } = Astro.props;
+---
+
+<div class="relative group">
+  <img src={srcMobile} alt="picture of earth" class="md:hidden" />
+  <img src={srcDesktop} alt="picture of earth" class="hidden md:block" />
+  <div
+    class="absolute from-transparent to-gray-900 bg-gradient-to-b inset-0 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+  >
+  </div>
+  <h3
+    class="uppercase w-40 absolute bottom-0 m-4 mx-6 text-2xl text-white font-light group-hover:scale-110 transition group-hover:text-black"
+  >
+    {title}
+  </h3>
+</div>
