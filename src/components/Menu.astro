@@ -1,0 +1,54 @@
+<!-- Menu section -->
+<div
+  id="menu"
+  class="absolute bg-black inset-0 grid place-items-center md:hidden disable"
+>
+  <!-- Links -->
+  <ul
+    class="uppercase flex flex-col gap-6 text-white text-xl font-light items-center"
+  >
+    <li class="group">
+      <a href="#about" class="about group-hover:text-red-400 transition"
+        >About</a
+      >
+    </li>
+
+    <li class="group">
+      <a href="#careers" class="careers group-hover:text-red-400 transition"
+        >careers</a
+      >
+    </li>
+    <li class="group">
+      <a href="#events" class="events group-hover:text-red-400 transition"
+        >events</a
+      >
+    </li>
+    <li class="group">
+      <a href="#products" class="products group-hover:text-red-400 transition"
+        >products</a
+      >
+    </li>
+    <li class="group">
+      <a href="#support" class="support group-hover:text-red-400 transition"
+        >support</a
+      >
+    </li>
+  </ul>
+</div>
+
+<style>
+  /* Menu links */
+  .disable {
+    @apply pointer-events-none invisible opacity-0 transition-all duration-300 ease-in;
+  }
+  .enable {
+    @apply pointer-events-auto visible opacity-100 transition-all duration-300 ease-in;
+  }
+</style>
+
+<script>
+  document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.getElementById("menu").classList.toggle("disable");
+    document.getElementById("menu").classList.toggle("enable");
+  });
+</script>

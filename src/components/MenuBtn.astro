@@ -1,0 +1,59 @@
+<!-- Menu btn-->
+<div class="menu-btn md:hidden z-10 cursor-pointer">
+  <div class="top"></div>
+  <div class="mid"></div>
+  <div class="bot"></div>
+</div>
+
+<style>
+  /* Menu btn*/
+  .menu-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  .top,
+  .mid,
+  .bot {
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    top: 50%;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all 150ms ease-in;
+  }
+
+  .top {
+    transform: translateY(-8px);
+  }
+
+  .bot {
+    transform: translateY(8px);
+  }
+
+  [data-open] {
+    transform: rotate(90deg);
+    transition: all 150ms ease-in;
+  }
+
+  [data-open] .top {
+    transform: rotate(45deg);
+  }
+
+  [data-open] .bot {
+    transform: rotate(-45deg);
+  }
+
+  [data-open] .mid {
+    display: none;
+  }
+</style>
+
+<script>
+  // State of menu
+  document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector(".menu-btn").toggleAttribute("data-open");
+  });
+</script>

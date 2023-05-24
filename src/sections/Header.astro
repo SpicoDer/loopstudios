@@ -2,7 +2,8 @@
 import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro";
 ---
-<header>
+
+<header class="relative h-screen">
   <Nav />
   <Hero />
 </header>
@@ -14,11 +15,10 @@ import Hero from "../components/Hero.astro";
     background-size: cover;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     header {
       background-image: url("../../public/images/mobile/image-hero.jpg");
       background-position: center;
     }
   }
 </style>
-
