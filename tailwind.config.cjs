@@ -11,21 +11,25 @@ module.exports = {
     fontFamily: {
       // heading: [],
       sans: ["Josefin Sans", "sans-serif"],
+      alata: "Alata",
     },
     extend: {
-      colors: {
-        prim: {
-          200: "#2c89ac",
-          300: "#4496b5",
-          400: "#26bba4",
-          500: "#116382",
-          600: "#0d4a62",
-        },
-        //   sec: '#818fff',
-        txt: {
-          dark: "#212529",
-          light: "#666",
-        },
+      // colors: {
+      //   prim: {
+      //     200: "#2c89ac",
+      //     300: "#4496b5",
+      //     400: "#26bba4",
+      //     500: "#116382",
+      //     600: "#0d4a62",
+      //   },
+      //   //   sec: '#818fff',
+      //   txt: {
+      //     dark: "#212529",
+      //     light: "#666",
+      //   },
+      // },
+      letterSpacing: {
+        widest: ".3em",
       },
     },
   },

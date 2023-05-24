@@ -1,0 +1,12 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<li class="group">
+  <a href={`#${title}`} class="capitalize">{title}</a>
+  <div class="border border-white opacity-0 group-hover:opacity-100"></div>
+</li>
