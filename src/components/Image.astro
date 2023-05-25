@@ -9,8 +9,13 @@ const { title, srcDesktop, srcMobile } = Astro.props;
 ---
 
 <div class="relative group">
-  <img src={srcMobile} alt={title} class="md:hidden w-full" />
-  <img src={srcDesktop} alt={title} class="hidden md:block w-full" />
+  <img loading="lazy" src={srcMobile} alt={title} class="md:hidden w-full" />
+  <img
+    loading="lazy"
+    src={srcDesktop}
+    alt={title}
+    class="hidden md:block w-full"
+  />
   <div
     class="absolute from-transparent to-gray-900 bg-gradient-to-b inset-0 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
   >
